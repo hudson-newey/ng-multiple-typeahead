@@ -1,0 +1,24 @@
+<label for="typeaheadInput">
+  Typeahead input pill component will multiple selectors
+</label>
+
+<div class="form-inline form-group border p-1">
+  <span
+    *ngFor="let site of activeSites"
+    class="control-label bg-primary rounded-pill p-2 text-white me-1"
+  >
+    {{ site.name }}
+  </span>
+
+  <input
+    #typeaheadInputRef
+    name="typeaheadInput"
+    type="text"
+    class="form-control d-inline w-25 border-0"
+    [ngbTypeahead]="search"
+    [(ngModel)]="inputModel"
+    (selectItem)="onSiteSelected($event)"
+    (keydown.backspace)="keyDownEvent()"
+    placeholder="Search for a site"
+  />
+</div>
