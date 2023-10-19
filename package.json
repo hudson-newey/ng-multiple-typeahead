@@ -1,6 +1,22 @@
 {
-  "name": "project",
-  "version": "0.0.0",
+  "name": "@hudson-newey/ng-multiple-typeahead",
+  "version": "1.0.0",
+  "description": "An Angular typeahead component",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hudson-newey/ng-multiple-typeahead.git"
+  },
+  "keywords": [
+    "angular",
+    "typeahead"
+  ],
+  "author": "hudson-newey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hudson-newey/ng-multiple-typeahead/issues"
+  },
+  "homepage": "https://github.com/hudson-newey/ng-multiple-typeahead#readme",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +24,6 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^16.0.0",
     "@angular/common": "^16.0.0",
